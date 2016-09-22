@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="ad.size" content="width=980,height=250">
+	<title>MAZDA 3 - 980x250</title>
+	
+	<!--CSS/Fonts -->
+	<link href="index.css" rel="stylesheet" type="text/css" />
+
+	<!--Sizmek component -->
+	<script type="text/javascript" src="sizmek/EBLoader.js"></script>
+	
+	<!--TimelineLite -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+	
+	<!--Js-->
+	<script src="main.js" type="text/javascript"></script>
+
+	<!--jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	
+	<!--Sizmek -->
+	<script type="text/javascript">
+		function initEB(){
+			if (!EB.isInitialized()){
+				EB.addEventListener(EBG.EventName.EB_INITIALIZED, startAd);
+			}else{
+				startAd();
+			}
+		}
+		function startAd(){
+			//alert("start banner");
+			document.getElementById("banner").style.visibility = "visible";
+		}
+		function handleEBClickthrough(){
+			//console.log('click_throught');
+			//EB.clickthrough();
+			EB.clickthrough("generico");
+		}
+	</script>
+	
+</head>
+
+<body onload="cargado();" style="background-color:#eee">
+
+	<div id="library" style="display:none;">
+		<img src="images/it1_dis_txt1.png">
+		<img src="images/it2_dis_txt1.png">
+		<img src="images/it3_dis_txt1.png">
+		<img src="images/it4_dis_txt1.png">
+		<img src="images/it5_dis_txt1.png">
+		
+		<img src="images/it1_dis_txt2.png">
+		<img src="images/it2_dis_txt2.png">
+		<img src="images/it3_dis_txt2.png">
+		<img src="images/it4_dis_txt2.png">
+		<img src="images/it5_dis_txt2.png">
+		
+		<img src="images/it1_dis_bg.jpg">
+		<img src="images/it2_dis_bg.jpg">
+		<img src="images/it3_dis_bg.jpg">
+		<img src="images/it4_dis_bg.jpg">
+		<img src="images/it5_dis_bg.jpg">
+		
+		<img src="images/min_it1_dis.png">
+		<img src="images/min_it2_dis.png">
+		<img src="images/min_it3_dis.png">
+		<img src="images/min_it4_dis.png">
+		<img src="images/min_it5_dis.png">
+		
+		<img src="images/it1_gal_bg.jpg">
+		<img src="images/it2_gal_bg.jpg">
+		<img src="images/it3_gal_bg.jpg">
+		<img src="images/it4_gal_bg.jpg">
+		<img src="images/it5_gal_bg.jpg">
+		
+		<img src="images/min_it1_gal.jpg">
+		<img src="images/min_it2_gal.jpg">
+		<img src="images/min_it3_gal.jpg">
+		<img src="images/min_it4_gal.jpg">
+		<img src="images/min_it5_gal.jpg">
+	</div>
+	
+	<div id="ad">
+	
+		<div id="contLoading">
+			<div id="loading"></div>
+		</div>
+		
+		<div id="banner">
+			
+			<!--home-->
+			<div id="home">
+				<div id="home_bg">
+					<img src="images/home_bg.jpg" alt="" />
+					<img id="lens" src="images/lens.jpg" alt="" /></div>
+				</div>
+				<div id="logo_mazda" class="home"><img src="images/logo_mazda.png" alt="" /></div>
+				<div id="logo_zoom" class="home"><img src="images/logo_zoom.png" alt="" /></div>
+				<div class="click_throught" onclick="handleEBClickthrough()"></div>
+				<div id="bt_pruebalo" class="bt">
+					<img id="bt_pruebalo_txt" class="txt" src="images/bt_pruebalo_txt.png" alt="" />
+					<img class="flecha_bg" src="images/flecha_bg.png" alt="" />
+					<img class="flecha" src="images/flecha.png" alt="" />
+				</div>				
+			</div>
+			<!--//home-->
+			
+			<!--diseño dinámico menu-->
+			<div id="diseno" class="seccion">
+				<div id="diseno_menu1" class="apartado">
+					<img src="images/diseno_menu1_bg.jpg" class="bg" alt="" />
+					<img id="diseno_menu1_txt" class="txt" src="images/diseno_menu1_txt.png" alt="" />
+				</div>
+				<div id="diseno_menu2" class="apartado">
+					<img src="images/diseno_menu2_bg.jpg" class="bg" alt="" />
+					<img id="diseno_menu2_txt" class="txt" src="images/diseno_menu2_txt.png" alt="" />
+				</div>
+				<div id="diseno_menu3" class="apartado">
+					<img src="images/diseno_menu3_bg.jpg" class="bg" alt="" />
+					<img id="diseno_menu3_txt" class="txt" src="images/diseno_menu3_txt.png" alt="" />
+				</div>
+				<div id="diseno_menu4" class="apartado">
+					<img src="images/diseno_menu4_bg.jpg" class="bg" alt="" />
+					<img id="diseno_menu4_txt" class="txt" src="images/diseno_menu4_txt.png" alt="" />
+				</div>
+				<div id="diseno_menu5" class="apartado">
+					<img src="images/diseno_menu5_bg.jpg" class="bg" alt="" />
+					<img id="diseno_menu5_txt" class="txt" src="images/diseno_menu5_txt.png" alt="" />
+				</div>
+			</div>
+			<!--//diseño dinámico menu-->
+			
+			<!--carousel-->
+			<div id="carousel" class="seccion">
+				<div id="items">
+					<div id="item1"><div id="ytplayer"></div></div>
+				</div>
+				<div id="sele_items_bg"></div>
+				<div id="sele_items"></div>
+				<div id="cerrar_carousel" class="cerrar">
+					<img src="images/flecha_bg.png" alt="" />
+					<img class="cruz" src="images/cerrar.png" alt="" />
+				</div>
+			</div>
+			<!--//carousel-->
+			
+			<!--equipamiento y oferta-->
+				<div id="equipamiento" class="seccion">
+					<div id="equipamiento_bg"><img src="images/equipamiento_bg.jpg" alt="" /></div>
+					<div id="equipamiento_txt_holder">
+						<img id="equipamiento_txt1" src="images/equipamiento_txt1.png" alt="" />
+						<img id="equipamiento_txt2" src="images/equipamiento_txt2.png" alt="" />
+						<img id="equipamiento_txt3" src="images/equipamiento_txt3.png" alt="" />
+					</div>
+					<div id="logo_flexi"><img src="images/logo_flexi.png" alt="" /></div>
+					<div id="logo_zoom" class="home"><img src="images/logo_zoom.png" alt="" /></div>
+					<div class="click_throught" onclick="handleEBClickthrough()"></div>
+					<div id="bt_legal">
+						<img id="bt_legal_txt" src="images/bt_legal_txt.png" alt="" />
+						<img id="bt_legal_flecha" src="images/bt_legal_flecha.png" alt="" />
+					</div>
+					<div id="bt_mas_informacion" class="bt">
+						<img id="bt_mas_informacion_txt" class="txt flecha_txt" src="images/bt_mas_informacion_txt.png" alt="" />
+						<img class="flecha_bg" src="images/flecha_bg.png" alt="" />
+						<img class="flecha" src="images/flecha.png" alt="" />
+					</div>
+					<div id="popup_legal">
+						<img id="popup_legal_txt" src="images/popup_legal_txt.png" alt="" />
+						<div class="click_throught" onclick="handleEBClickthrough()"></div>
+						<div id="popup_legal_cerrar" class="cerrar"><img class="cruz" src="images/popup_legal_cerrar.png" alt="" /></div>
+					</div>
+				</div>
+			<!--//equipamiento y oferta-->
+			
+			<!--nav-->
+			<div id="nav" class="home">
+				<div id="nav_bg"></div>
+				<div id="logo_mazda3"><img src="images/logo_mazda3.png" alt="" /></div>
+				<div id="cuota"><img src="images/cuota_txt.png" alt="" /></div>
+				<div class="click_throught" onclick="handleEBClickthrough()"></div>
+				<div id="nav_llistat">
+					<div id="nav_diseno" class="nav bt">
+						<img id="nav_diseno_txt" class="txt" src="images/nav_diseno_txt.png" alt="" />
+						<img id="nav_diseno_img" class="nav_img" src="images/nav_diseno_img.jpg" alt="" />
+					</div>
+					<div id="nav_galeria" class="nav bt">
+						<img id="nav_galeria_txt" class="txt" src="images/nav_galeria_txt.png" alt="" />
+						<img id="nav_galeria_img" class="nav_img" src="images/nav_galeria_img.jpg" alt="" />
+					</div>
+					<div id="nav_equipamiento" class="nav bt">
+						<img id="nav_equipamiento_txt" class="txt flecha_txt" src="images/nav_equipamiento_txt.png" alt="" />
+						<img class="flecha_bg" src="images/flecha_bg.png" alt="" />
+						<img class="flecha" src="images/flecha.png" alt="" />
+					</div>
+				</div>
+			</div>
+			<!--//nav-->
+			
+			<!--ini anima-->
+			<div id="ini_anima">
+				<div class="bg"></div>
+				<img id="fosc" src="images/home_bg_fosc.jpg" alt="" />
+				<img id="clar" src="images/home_bg.jpg" alt="" />
+			</div>
+			<!--//ini anima-->
+			
+			<div id="tapa"></div>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

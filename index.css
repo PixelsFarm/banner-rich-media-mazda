@@ -1,0 +1,540 @@
+/****************
+** MAZDA M3 CSS
+*/
+
+html {-webkit-font-smoothing: antialiased;}
+body {font-size: 62.5%;}
+
+#ad{
+	position: absolute;
+	width:980px;
+	height:250px;
+	overflow: hidden;
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-color: #000;
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	border: 1px solid #c1c1c1;
+}
+
+#banner {
+	width:100%;
+	height:100%;
+}
+
+#border {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height:100%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border: 1px solid #c1c1c1;
+}
+
+div, img, svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+}
+
+#tapa{
+	width: 100%;
+	height: 100%;
+	background-color: #000;	
+}
+
+.seccion {
+	left: 272px;
+	width: 706px;
+	height: 100%;
+}
+
+.bg_negro {
+	opacity: 0;
+	visibility: hidden;
+	width: 100%;
+	height: 100%;
+	background: #000;
+}
+
+.click_throught {
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+}
+
+.bt {
+    cursor: pointer;
+    height: 27px;
+    box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+    border: 1px solid #787c82;
+}
+
+.bt .flecha_bg {
+	top: -1px;
+	left: 93px;
+	border: 1px solid #d68387;
+}
+
+.flecha {
+	top: 7px;
+}
+
+.bt .txt {
+	top: 6px;
+	left: 12px;
+}
+
+
+
+
+
+/**************
+ animacio loader 
+*/
+
+#contLoading{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+#loading{
+    background: url(images/loading.png);
+    width: 54px;
+    height: 54px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -27px;
+    margin-top: -27px;
+    animation:         circular 15s infinite;
+    -webkit-animation: circular 15s infinite;
+}
+@keyframes circular {
+  0%   { 
+	transform: rotate(0deg);
+	}
+  50% { 
+	transform: rotate(360deg);
+	}
+}
+@-webkit-keyframes circular {
+  0%   { 
+	-webkit-transform: rotate(0deg);
+	}
+  50% { 
+	-webkit-transform: rotate(360deg);
+	}
+}
+
+
+
+
+/**************
+ navegador izq 
+*/
+#nav {
+	width: 272px;
+	height: 100%;
+}
+
+#logo_mazda3 {
+	top: 25px;
+	left: 22px;
+}
+
+.nav {
+	cursor: pointer;
+	left: 21px;
+	width: 226px;
+	height: 33px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border: 1px solid #787c82;
+}
+
+.nav .txt {
+	top: 10px;
+    left: 12px;
+}
+
+.nav_img {
+	left: 152px;
+	border-left: 1px solid #787c82;
+}
+
+.img_hover {
+	opacity: 0;
+	visibility: hidden;
+	left: 0;
+	height: 100%;
+	background: #C6150F;
+}
+
+#nav_equipamiento .img_hover {
+    width: 197px;
+}
+
+#bt_pruebalo .img_hover {
+    width: 93px;
+}
+
+#nav_diseno {
+	top: 85px;
+}
+
+#nav_galeria {
+	top: 117px;
+}
+
+#nav_equipamiento {
+	top: 161px;
+	height: 27px;
+}
+
+#nav_equipamiento .flecha_bg {
+    left: 197px;
+}
+
+#nav_equipamiento .flecha {
+	left: 208px;
+}
+
+#cuota{
+    top: 198px;
+    left: 21px;
+}
+
+#nav_bg {
+	opacity: 0;
+	visibility: hidden;
+	width: 100%;
+	height: 100%;
+	background: #181818;
+}
+
+
+
+/**************
+ anima ini 
+*/
+#ini_anima {
+	width: 100%;
+	height: 100%;
+}
+
+#ini_anima .bg {
+	width: 100%;
+	height: 100%;
+	background: #000;
+}
+
+
+
+/**************
+ home 
+*/
+#home {
+	width: 100%;
+	height: 100%;
+}
+
+#logo_mazda {
+    top: 28px;
+    left: 904px;
+}
+
+#logo_zoom {
+    top: 167px;
+    left: 841px;
+}
+
+#bt_pruebalo {
+	top: 197px;
+    left: 842px;
+    width: 120px;
+}
+
+#bt_pruebalo_txt {
+	left: 23px;
+}
+
+#bt_pruebalo .flecha_bg {
+	left: 93px;
+}
+
+#bt_pruebalo .flecha {
+	left: 103px;
+}
+
+
+
+/**************
+ diseño 
+*/
+#diseno {
+	opacity: 0;
+	visibility: hidden;
+}
+
+#diseno_menu1 {
+	left: 0;
+}
+
+#diseno_menu2 {
+	left: 140px;
+}
+
+#diseno_menu3 {
+	left: 280px;
+}
+
+#diseno_menu4 {
+	left: 420px;
+}
+
+#diseno_menu5 {
+	left: 561px;
+}
+
+#diseno_menu1_txt {
+    top: 200px;
+    left: 37px;
+}
+
+#diseno_menu2_txt {
+    top: 200px;
+    left: 24px;
+}
+
+#diseno_menu3_txt {
+	top: 198px;
+	left: 33px;
+}
+
+#diseno_menu4_txt {
+	top: 198px;
+	left: 44px;
+}
+
+#diseno_menu5_txt {
+	top: 199px;
+	left: 42px;
+}
+
+.apartado {
+	cursor: pointer;
+	top: -250px;
+	height: 100%;
+	width: 140px;
+	box-sizing: border-box;
+    border-left: 1px solid #fff;
+}
+
+
+
+
+
+
+/**************
+ carousel 
+*/
+#carousel {
+	opacity: 0;
+	visibility: hidden;
+	overflow: hidden;
+}
+
+#cerrar_carousel {
+	cursor: pointer;
+	top: 0;
+	left: 680px;
+}
+
+#cerrar_carousel .cruz {
+	top: 7px;
+	left: 9px;
+}
+
+.item {
+	top: 194px;
+    width: 141px;
+    height: 54px;
+}
+
+#carousel.gal .item {
+	overflow: hidden;
+}
+
+.item .thumbnail {
+	cursor: pointer;
+}
+
+.item_bg {
+	position: relative;
+	top: initial;
+	left: initial;
+	float: left;
+}
+
+.item_txt1 {
+	top: 30px;
+	left: 32px;
+}
+
+.item_txt2 {
+	top: 70px;
+	left: 32px;
+}
+
+.activo {
+	opacity: 0;
+	visibility: hidden;
+}
+
+#items {
+	width: 99999em;
+	height: 196px;
+	top: 0;
+	left: 0;
+}
+
+#items .txt1 {
+	top: 31px;
+    left: 31px;
+}
+
+#items .txt2 {
+	top: 69px;
+    left: 31px;
+}
+
+#sele_items {
+	width: 100%;
+}
+
+#sele_item1 {
+	left: 0;
+}
+
+#sele_item2 {
+	left: 141px;
+}
+
+#sele_item3 {
+	left: 282px;
+}
+
+#sele_item4 {
+	left: 423px;
+}
+
+#sele_item5 {
+	left: 565px;
+}
+
+#sele_items_bg {
+    opacity: 0;
+	visibility: hidden;
+	top: initial;
+    bottom: 0;
+    width: 100%;
+    height: 54px;
+	background: #181818;
+}
+
+/**************
+ equipamiento 
+*/
+#equipamiento {
+	opacity: 0;
+	visibility: hidden;
+}
+
+#equipamiento_txt_holder {
+    top: 26px;
+    left: 32px;
+}
+
+#equipamiento_txt2 {
+	top: 59px;
+}
+
+#equipamiento_txt3 {
+	top: 126px;
+}
+
+#bt_legal {
+	cursor: pointer;
+    top: 23px;
+    left: 633px;
+    width: 61px;
+    height: 12px;
+}
+
+#bt_legal_flecha {
+	left: 60px;
+}
+
+#logo_flexi {
+	top: 174px;
+    left: 629px;
+}
+
+#popup_legal {
+	width: 100%;
+	height: 100%;
+	background: #000;
+}
+
+#popup_legal_txt {
+    top: 56px;
+    left: 33px;
+}
+
+#popup_legal_cerrar {
+	cursor: pointer;
+	top: 20px;
+    left: 679px;
+	width: 15px;
+    height: 15px;
+}
+
+#popup_legal_cerrar .cruz {
+	top: 4px;
+	left: 4px;
+}
+
+#bt_mas_informacion {
+	top: 199px;
+    left: 31px;
+    width: 176px;
+}
+
+#bt_mas_informacion .flecha_bg {
+	left: 147px;
+}
+
+#bt_mas_informacion .flecha {
+	left: 158px;
+}
+
+
+
+
